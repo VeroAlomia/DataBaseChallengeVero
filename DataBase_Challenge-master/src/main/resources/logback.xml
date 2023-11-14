@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="log.md" class="ch.qos.logback.core.FileAppender">
+        <file>src/test/log.md</file>
+        <encoder>
+            <pattern> [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="log.md" />
+    </root>
+</configuration>
